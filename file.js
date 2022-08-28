@@ -13,11 +13,13 @@ Buon lavoro e buon divertimento!*/
 // creo una costante per inserire tutti i numeri all'interno del DOM
 
 
-const ul = document.querySelector('ul.list')
+
 
 for (let number = 0; number < 101; number++) {
-    let list = `<li class="box box-${number}>${number}</li>"`
-    ul.innerHTML = list
-
+    const ul = document.querySelector('list')
+    let listElement = `<li class="box box${number}>${number}</li>`
+    ul.innerHTML = listElement
+    console.log(listElement)
     console.log(number)
 }
+
